@@ -8,8 +8,8 @@ require 'pry'
 
 
 def display_rainbow(colors)
-  colors.each_with_index do |color, index|
-    puts "R: #{color[index]}"
+  colors do |color|
+    puts "R: #{color}"
 
   binding.pry
 end
